@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders:opsz@10..72&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders:opsz@10..72&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
 
 
 *{
     margin: 0;
     border: 0;
     padding: 0;
+    font-family: "Fraunces", serif;
 }
 :root{
     --Green_500: hsl(158, 36%, 37%);
@@ -22,7 +25,8 @@ body{
     background-color:var(--Cream);
 }
 #main{
-    width: 40%;
+    width: 42%;
+    height: 440px;
     display: flex;
     border-radius: 15px;
     background-color: var(--White);
@@ -31,6 +35,7 @@ body{
     width: 50%;
     & img{
         width: 100%;
+        height: 100%;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px; 
     }
@@ -41,22 +46,26 @@ body{
     padding: 0 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     & h5{
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: var(--Grey);
         letter-spacing: 2.5px;
         text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
     }
     & h1{
         color: var(--Black);
         width: 90%;
-        font-size: 2rem;
+        font-size: 1.7rem;
+        line-height: 1;
         font-weight: bold;
     }
     & p{
         color: var(--Grey);
-        font-size: 1rem;
+        font-size: 0.9rem;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.5;
     }
     & div{
         width: 80%;
@@ -73,6 +82,7 @@ body{
     & button{
         padding: 0.8rem 0;
         background-color: var(--Green_500);
+        font-family: "Montserrat", sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,6 +103,7 @@ body{
 @media (max-width:375px) {
     #main{
         width: 90%;
+        height: auto;
         display: flex;
         flex-direction: column;
         border-radius: 15px;
@@ -111,9 +122,6 @@ body{
         width: 90%;
         gap: 1rem;
         padding: 1rem 5%;
-        & p{
-            font-size: 1.1rem;
-        }
         & div{
             width: 60%;
             display: flex;
